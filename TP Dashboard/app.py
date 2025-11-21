@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
+import plotly as px
 
 # ================================
 # 🚇 Dashboard RATP - 1er trimestre
@@ -131,4 +131,5 @@ fig_arret = px.bar(
     color_continuous_scale="Blues"
 )
 st.plotly_chart(fig_arret, use_container_width=True)
+
 
