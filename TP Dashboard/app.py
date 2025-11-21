@@ -13,7 +13,7 @@ st.title("📊 Dashboard RATP - Validations des titres de transport (1er trimest
 
 # --- Chargement des données ---
 data = pd.read_csv(
-    "TP Dashboard/validations-reseau-ferre-nombre-validations-par-jour-1er-trimestre.csv",
+    "dashboard/TP Dashboard/validations-reseau-ferre-nombre-validations-par-jour-1er-trimestre.csv",
     sep=";"
 )
 
@@ -131,5 +131,6 @@ fig_arret = px.bar(
     color_continuous_scale="Blues"
 )
 st.plotly_chart(fig_arret, use_container_width=True)
+
 
 
